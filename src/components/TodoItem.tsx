@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {Todo} from '../types/types';
 
 type TodoItemProps = {
-  todo: Todo;
+  todo: any;
   onDelete: () => void;
   onToggleComplete: () => void;
 };
@@ -19,14 +19,14 @@ const TodoItem: React.FC<TodoItemProps> = ({
         <View
           style={[
             styles.checkbox,
-            {backgroundColor: todo.completed === 1 ? '#28a745' : 'white'},
+            {backgroundColor: todo.completed === true ? '#28a745' : 'white'},
           ]}
         />
         <View>
           <Text
             style={[
               styles.title,
-              todo.completed === 1 && styles.completedTitle,
+              todo.completed === true && styles.completedTitle,
             ]}>
             {todo.title}
           </Text>
