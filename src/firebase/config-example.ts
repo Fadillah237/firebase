@@ -3,12 +3,13 @@ import {getAuth} from 'firebase/auth';
 import {getFirestore} from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'EXAMPLE_API_KEY',
-  authDomain: 'EXAMPLE_AUTH_DOMAIN',
-  projectId: 'EXAMPLE_PROJECT_ID',
-  storageBucket: 'EXAMPLE_STORAGE_BUCKET',
-  messagingSenderId: 'EXAMPLE_MESSAGING_SENDER_ID',
-  appId: 'EXAMPLE_APP_ID',
+  apiKey: "AIzaSyDm6YT8g5zTEs9enxtQCj4VW0mzZzmcmu0",
+  authDomain: "cobacoba-ef355.firebaseapp.com",
+  projectId: "cobacoba-ef355",
+  storageBucket: "cobacoba-ef355.firebasestorage.app",
+  messagingSenderId: "31296103083",
+  appId: "1:31296103083:web:4d472a06551e7cded20dee",
+  measurementId: "G-7DDJYMCBJ8"
 };
 
 const app: FirebaseApp = initializeApp(firebaseConfig);
